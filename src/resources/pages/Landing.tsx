@@ -1,6 +1,8 @@
 import Navigation from "../components/Navigation";
 import profilePic from "../../assets/graphic 1.svg";
 import TextScramble from "../components/TextScramble";
+import TechList from "../components/TechList";
+
 export default function Landing() {
   return (
     <div className="Landing mx-4 h-screen sm:mx-8 md:mx-16 lg:mx-32 xl:mx-68">
@@ -59,6 +61,10 @@ export default function Landing() {
           My <span className="text-brand-blue">Technologies</span> and <span className="text-brand-orange">Tools.</span>
         </h2>
         <p className="text-left">Check out our latest projects.</p>
+
+        <div className="flex flex-wrap gap-4 justify-start">
+          <TechList />
+        </div>
       </div>
       <div className="projects flex flex-col gap-4">
         <h2 className="text-2xl font-bold text-left mt-20">
