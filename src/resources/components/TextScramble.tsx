@@ -110,8 +110,8 @@ const TextScramble = () => {
   }, []); // Empty dependency array ensures this runs only once on mount
 
   return (
-    <p
-      className="text-2xl pt-3 text-brand-orange text-center min-h-[2em]" // min-h prevents layout shifts
+    <h2
+      className="text-2xl pt-3 text-brand-orange text-center min-h-[2em] lg:text-left" // min-h prevents layout shifts
       dangerouslySetInnerHTML={{ __html: text }} // Render the HTML output
     />
   );

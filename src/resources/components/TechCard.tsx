@@ -11,7 +11,7 @@ const TechCard: React.FC<TechCardProps> = ({ name, iconSrc }) => {
       <div className="w-6 h-6">
         <img src={iconSrc} alt={name} className="w-full h-full object-contain" />
       </div>
-      <h3 className="text-gray-800 font-medium">{name}</h3>
+      <p className="text-gray-800 font-medium">{name}</p>
     </div>
   );
 };
